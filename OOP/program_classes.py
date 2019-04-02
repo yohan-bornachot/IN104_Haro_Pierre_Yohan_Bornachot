@@ -1,3 +1,5 @@
+import unittest
+
 class Media :
     def __init__(self,name,author,release_date):
         self.name=name
@@ -34,8 +36,12 @@ class Movie(Media):
         for i in self.actors:
             print(i)
 
+#Define exceptions
+class ...(Exception):pass
+
 # Main Method
 if __name__ == '__main__':
+    unittest.main()
     "This code runs when you invoke the script from the command line"
     Livre = Book('Les aventure de l IN','Y. Bornachot','23/03/2019',3,'comics')
     Livre.get_info()
