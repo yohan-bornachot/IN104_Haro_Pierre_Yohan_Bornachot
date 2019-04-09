@@ -14,9 +14,10 @@ class MinimaxBrain:
         possibleStates = gameState.findNextStates()
         #print(gameState.toDisplay(True))
         value=float("-inf")
+        dico_state={}
         next_state = gameState
         for state in possibleStates:
-            new_value = minimax(state,self.depth,True)
+            new_value = minimax(state,self.depth,True,dico_state)
             if new_value >= value:
                 value = new_value
                 next_state = state
