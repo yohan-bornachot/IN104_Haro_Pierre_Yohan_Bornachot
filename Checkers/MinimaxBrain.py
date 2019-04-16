@@ -8,7 +8,7 @@ class MinimaxBrain:
 
     def __init__(self, config=None, rules=None):
         self.name = 'AI' # set your AI name here
-        self.depth = 5 # Set the exploration depth here
+        self.depth = 8 # Set the exploration depth here
     
     def play(self, gameState, timeLimit):
         possibleStates = gameState.findNextStates()
