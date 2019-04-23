@@ -1,13 +1,14 @@
 import IN104_simulateur as simu
 from MinimaxBrain import MinimaxBrain
+from MinimaxBrain_bis import MinimaxBrainBis
 rules={}
 rules['menCaptureBackward']=False
 rules['kingsCanFly']=True
 rules['menMustStop']=False
 rules['noCaptureMax']=16
 
-brain1 = MinimaxBrain()
-brain2 = MinimaxBrain()
+brain1 = MinimaxBrain() #White
+brain2 = MinimaxBrainBis() #Black
 player_time = 50 #the player will have 30s to play
 ai_time = 20 #the AI will have 10 sec to play
 game = simu.Game(brain1, ai_time, brain2, ai_time, rules=rules)

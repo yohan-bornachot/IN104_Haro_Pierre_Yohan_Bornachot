@@ -10,7 +10,7 @@ def evaluate(state):
         elif cell is Cell.b:
             score -= 1
         elif cell is Cell.B:
-            score -= 2
+            score -= 1
         elif cell is Cell.W:
-            score += 2
+            score += 1
     return score
