@@ -8,7 +8,7 @@ def evaluate(state):
     for k in range(0,32):
         [r,c] = boardState.indexToRC(k)
         if cell[k] is Cell.w:
-            score =+ r
+            score += r
         elif cell[k] is Cell.b:
             score -= r
         elif cell[k] is Cell.B:
