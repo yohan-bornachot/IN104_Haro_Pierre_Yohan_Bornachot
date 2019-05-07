@@ -1,5 +1,5 @@
 import IN104_simulateur as simu
-from evaluation import evaluate
+from evaluation_improving import evaluate
 from minimax_alphabeta import minimax
 
 

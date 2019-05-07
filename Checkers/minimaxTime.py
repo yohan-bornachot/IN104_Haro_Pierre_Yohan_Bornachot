@@ -1,6 +1,6 @@
 import IN104_simulateur as simu
 import time
-from evaluation_bis import evaluate
+from evaluation import evaluate
 from minimax_time import minimax
 
 
@@ -15,7 +15,7 @@ class MinimaxTime:
         dico_state={}
         next_state = gameState
         for state in possibleStates:
-            new_value = minimax(state,0.1,True,simu.GameState.findNextStates,evaluate,dico_state)
+            new_value = minimax(state,timeLimit/(len(possibleStates)+1),False,simu.GameState.findNextStates,evaluate,dico_state)
             if new_value >= value:
                 value = new_value
                 next_state = state
