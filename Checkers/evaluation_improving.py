@@ -5,7 +5,8 @@ def evaluate(state):
     boardState = state.boardState
     score = 0
     cell = boardState.cells
-    for k in range(0,32):
+    boardSize = len(cell)
+    for k in range(0,boardSize):
         [r,c] = boardState.indexToRC(k)
         if cell[k] is Cell.w:
             score =+ r
