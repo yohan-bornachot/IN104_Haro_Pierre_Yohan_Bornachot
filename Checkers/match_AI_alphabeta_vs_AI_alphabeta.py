@@ -10,7 +10,7 @@ rules['noCaptureMax']=16
 brain1 = MinimaxBrain() #White
 brain2 = MinimaxBrainBis() #Black
 player_time = 50 #the player will have 30s to play
-ai_time = 20 #the AI will have 10 sec to play
+ai_time = 10 #the AI will have 10 sec to play
 game = simu.Game(brain1, ai_time, brain2, ai_time, rules=rules)
 game.displayLevel = 1   # this prints the board after each move
 game.runGame()
