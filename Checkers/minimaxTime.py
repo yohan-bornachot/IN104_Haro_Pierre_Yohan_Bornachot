@@ -1,13 +1,13 @@
 import IN104_simulateur as simu
 import time
-from evaluation import evaluate
+from evaluation_improving import evaluate
 from minimax_time import minimax
 
 
 class MinimaxTime:
 
     def __init__(self, config=None, rules=None):
-        self.name = 'AI' # set your AI name here
+        self.name = 'Yohan & Pierre' # set your AI name here
 
     def play(self, gameState, timeLimit):
         possibleStates = gameState.findNextStates()

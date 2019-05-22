@@ -1,0 +1,1 @@
+from minimaxTime import MinimaxTime as AI
